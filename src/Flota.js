@@ -76,11 +76,10 @@ const Flota = ({ signOut }) => {
           "circle-radius": 6,
           "circle-color": "#B42222",
         },
-        // esta propiedad permite extraer SOLAMENTE los marcadores del archivo json donde estan las coordenadas de las lineas mas las coordenadas de los marcadores
+        // esta propiedad permite extraer SOLAMENTE las coordenadas de los marcadores. Estas coordenadas se encuentran en el archivo coordenadas.json
         filter: ["==", "$type", "Point"],
       });
     } else {
-
       // Si hay una linea dibujada entonces
       // borramos linea y marcadores
       map.current.removeLayer("mapa-rutas-linea");
@@ -103,7 +102,7 @@ const Flota = ({ signOut }) => {
     map.current.on("load", () => {
       map.current.addSource("mapa-rutas", {
         type: "geojson",
-        data: Coordenadas,// Coordenadas es un archivo json cen formato geojson donde almaceno coordenadas de las lineas y los marcadores
+        data: Coordenadas, // Coordenadas es un archivo json cen formato geojson donde almaceno coordenadas de las lineas y los marcadores
       });
     });
   });
