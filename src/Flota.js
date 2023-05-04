@@ -51,6 +51,8 @@ const Flota = ({ signOut }) => {
   const [zoom, setZoom] = useState(14);
 
   function mostrarRuta() {
+    // Si no hay alguna linea dibujada en el mapa dibujamos
+    // la linea y los marcadores
     if (!map.current.getLayer("mapa-rutas-linea")) {
       map.current.addLayer({
         id: "mapa-rutas-linea",
@@ -74,9 +76,13 @@ const Flota = ({ signOut }) => {
           "circle-radius": 6,
           "circle-color": "#B42222",
         },
+        // esta propiedad permite extraer SOLAMENTE los marcadores del archivo json donde estan las coordenadas de las lineas mas las coordenadas de los marcadores
         filter: ["==", "$type", "Point"],
       });
     } else {
+
+      // Si hay una linea dibujada entonces
+      // borramos linea y marcadores
       map.current.removeLayer("mapa-rutas-linea");
       map.current.removeLayer("mapa-rutas-puntos");
     }
@@ -97,7 +103,7 @@ const Flota = ({ signOut }) => {
     map.current.on("load", () => {
       map.current.addSource("mapa-rutas", {
         type: "geojson",
-        data: Coordenadas,
+        data: Coordenadas,// Coordenadas es un archivo json cen formato geojson donde almaceno coordenadas de las lineas y los marcadores
       });
     });
   });
