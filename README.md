@@ -1,6 +1,7 @@
-### Demo
+### Video Demo
 
-<img src='https://imgur.com/a/0CbveMK' title='video demo' width='' alt='Video demo'/>
+
+<img src='https://i.imgur.com/JPcunlC.gif' title='video demo' width='' alt='Video demo'/>
 
 ### Referencias
 
