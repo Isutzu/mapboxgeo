@@ -1,10 +1,8 @@
 ### Video Demo
 
-
 <!-- <img src='https://i.imgur.com/JPcunlC.gif' title='video demo' width='' alt='Video demo'/> -->
-<img src='https://imgur.com/nNlDlwU.gif' title='video demo' width='' alt='Video demo'/>
 
-
+<img src='https://i.imgur.com/nNlDlwU.gif' title='video demo' width='' alt='Video demo'/>
 
 ### Referencias
 
@@ -86,6 +84,7 @@ Amplify is a frontend library for interacting with backend services hosted on AW
     ]
 }
 ```
+
 ### Mapboxgl and geoJSON
 
 - [More than you ever wanted to know about GeoJSON](https://macwright.com/2015/03/23/geojson-second-bite.html)
@@ -102,7 +101,8 @@ Amplify is a frontend library for interacting with backend services hosted on AW
 - [How to use async/await ](https://rapidapi.com/guides/fetch-api-async-await)
 
 ### Notes
-useEffect is a hook. 
+
+useEffect is a hook.
 Allows you to perform side effects on components: Fetching Data or directly updating the DOM
 It runs on every render.
 
