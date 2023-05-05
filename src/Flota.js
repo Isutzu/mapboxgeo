@@ -59,11 +59,11 @@ const Flota = ({ signOut }) => {
     });
   });
 
- /*************** getGeoJsonData() ********************/
+  /*************** getGeoJsonData() ********************/
   async function getGeoJsonData(placa, fecha) {
-    // Retorna geojson. Todo lo que esta despues del keyword return es considerado formato geojson 
+    // Retorna geojson. Todo lo que esta despues del keyword return es considerado formato geojson
 
-    // Esta es el url de nuestra API que regresa en un array que contiene un objeto JSON con el numero de placa y valor de la coordenadas 
+    // Esta es el url de nuestra API que regresa en un array que contiene un objeto JSON con el numero de placa y valor de la coordenadas
     // Es solo para propositos de testeo porque no tengo una base de dynamo . Asi que tuve que crear mi propia data a traves de GET REQUEST
     // https://64533f06c18adbbdfe985034.mockapi.io/api/v1/ruta?placa=AL1234
     // https://64533f06c18adbbdfe985034.mockapi.io/api/v1/ruta?placa=SC456
@@ -86,7 +86,7 @@ const Flota = ({ signOut }) => {
           type: "Feature",
           geometry: {
             type: "LineString",
-            coordinates: coord[0].coordinates, // 
+            coordinates: coord[0].coordinates, //
           },
         },
       ],
@@ -96,7 +96,7 @@ const Flota = ({ signOut }) => {
   /******************** mostrarRuta()******************/
   async function mostrarRuta(placa, fecha) {
     //console.log(map.current.isSourceLoaded('mapa-rutas'))
-    alert(`Placa : ${placa} \n  Fecha: ${fecha}`);
+    // alert(`Placa : ${placa} \n  Fecha: ${fecha}`);
 
     // geojson almacena las coordenadas en formato geojson. Esta variable es el valor de la propiedad  "data" de la funcion addSource()
     const geojson = await getGeoJsonData(placa, fecha);

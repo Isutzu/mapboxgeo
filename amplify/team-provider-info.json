@@ -17,6 +17,12 @@
       },
       "geo": {
         "mapatracking": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "daaqvf0r1hexa",
+          "type": "manual"
+        }
       }
     }
   }
