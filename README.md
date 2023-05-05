@@ -59,7 +59,7 @@
 
 #### Amazon location services
 
--[https://aws.amazon.com/blogs/mobile/add-maps-to-your-app-in-3-steps-with-aws-amplify-geo/](https://aws.amazon.com/blogs/mobile/add-maps-to-your-app-in-3-steps-with-aws-amplify-geo/)
+- [https://aws.amazon.com/blogs/mobile/add-maps-to-your-app-in-3-steps-with-aws-amplify-geo/](https://aws.amazon.com/blogs/mobile/add-maps-to-your-app-in-3-steps-with-aws-amplify-geo/)
 
 - [Amazon location services for Android](https://aws.amazon.com/blogs/mobile/add-maps-to-your-android-app-with-aws-amplify-geo-powered-by-amazon-location-service/)
 
@@ -83,3 +83,26 @@ Amplify is a frontend library for interacting with backend services hosted on AW
     ]
 }
 ```
+### Mapboxgl and geoJSON
+
+- [More than you ever wanted to know about GeoJSON](https://macwright.com/2015/03/23/geojson-second-bite.html)
+- [Add multiple geometries from one GeoJSON source](https://docs.mapbox.com/mapbox-gl-js/example/multiple-geometries/)
+- [Add live realtime data](https://docs.mapbox.com/mapbox-gl-js/example/live-geojson/)
+- [A Complete Guide to Sources and Layers in React and Mapbox GL JS](https://www.lostcreekdesigns.co/writing/a-complete-guide-to-sources-and-layers-in-react-and-mapbox-gl-js/)
+
+- [How to solve error: "mapboxgl: There is already a source with this ID when updating layer"?](https://stackoverflow.com/questions/65597502/how-to-solve-error-mapboxgl-there-is-already-a-source-with-this-id-when-update)
+
+- [Display geoJSON from php on the map](https://gis.stackexchange.com/questions/360312/how-to-display-the-geojson-from-php-on-the-map)
+
+### Async/await
+
+- [How to use async/await ](https://rapidapi.com/guides/fetch-api-async-await)
+
+### Notes
+useEffect is a hook. 
+Allows you to perform side effects on components: Fetching Data or directly updating the DOM
+It runs on every render.
+
+### Issues resolved
+
+- [Remove layer does not remove the source id reference](https://github.com/mapbox/mapbox-gl-js/issues/9135)
