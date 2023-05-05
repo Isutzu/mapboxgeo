@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mapboxgeo/static/css/main.e41a9e40.css",
+    "main.js": "/mapboxgeo/static/js/main.aca56d62.js",
+    "static/js/483.8650e529.chunk.js": "/mapboxgeo/static/js/483.8650e529.chunk.js",
+    "static/js/787.9b06cee2.chunk.js": "/mapboxgeo/static/js/787.9b06cee2.chunk.js",
+    "index.html": "/mapboxgeo/index.html",
+    "main.e41a9e40.css.map": "/mapboxgeo/static/css/main.e41a9e40.css.map",
+    "main.aca56d62.js.map": "/mapboxgeo/static/js/main.aca56d62.js.map",
+    "483.8650e529.chunk.js.map": "/mapboxgeo/static/js/483.8650e529.chunk.js.map",
+    "787.9b06cee2.chunk.js.map": "/mapboxgeo/static/js/787.9b06cee2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e41a9e40.css",
+    "static/js/main.aca56d62.js"
+  ]
+}
