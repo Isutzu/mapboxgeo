@@ -86,7 +86,7 @@ const Flota = ({ signOut }) => {
           type: "Feature",
           geometry: {
             type: "LineString",
-            coordinates: coord[0].coordinates, //
+            coordinates: coord[0].coordinates,
           },
         },
       ],
